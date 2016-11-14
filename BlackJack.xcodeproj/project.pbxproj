@@ -15,7 +15,7 @@
 		47DB309C1DD121D1004A570D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB309B1DD121D1004A570D /* Card.swift */; };
 		47DB309F1DD1331F004A570D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB309E1DD1331F004A570D /* Deck.swift */; };
 		47DB30A11DD26C15004A570D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DB30A01DD26C15004A570D /* Main.storyboard */; };
-		D3798C591DD909A20079124B /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3798C581DD909A20079124B /* customButton.swift */; };
+		D447DBA51DD9386C003E3B0D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447DBA41DD9386C003E3B0D /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		47DB309B1DD121D1004A570D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		47DB309E1DD1331F004A570D /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		47DB30A01DD26C15004A570D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D3798C581DD909A20079124B /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customButton.swift; path = ../customButton.swift; sourceTree = "<group>"; };
+		D447DBA41DD9386C003E3B0D /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,11 @@
 		47DB30811DD11375004A570D /* BlackJack */ = {
 			isa = PBXGroup;
 			children = (
+				47DB30A01DD26C15004A570D /* Main.storyboard */,
 				47DB309A1DD12189004A570D /* Network */,
+				D447DBA31DD93823003E3B0D /* View */,
 				47DB309D1DD121D5004A570D /* Model */,
-				47DB30971DD12179004A570D /* View Controller */,
+				47DB30971DD12179004A570D /* Controller */,
 				47DB30961DD12171004A570D /* Supporting Files */,
 			);
 			path = BlackJack;
@@ -74,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				47DB30821DD11375004A570D /* AppDelegate.swift */,
-				47DB30A01DD26C15004A570D /* Main.storyboard */,
 				47DB30891DD11375004A570D /* Assets.xcassets */,
 				47DB308B1DD11375004A570D /* LaunchScreen.storyboard */,
 				47DB308E1DD11375004A570D /* Info.plist */,
@@ -82,12 +83,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		47DB30971DD12179004A570D /* View Controller */ = {
+		47DB30971DD12179004A570D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				47DB30941DD1213A004A570D /* BlackJackViewController.swift */,
 			);
-			name = "View Controller";
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		47DB309A1DD12189004A570D /* Network */ = {
@@ -106,6 +107,14 @@
 				47DB309E1DD1331F004A570D /* Deck.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D447DBA31DD93823003E3B0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D447DBA41DD9386C003E3B0D /* CustomButton.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +191,7 @@
 			files = (
 				47DB30991DD12184004A570D /* APIManager.swift in Sources */,
 				47DB30831DD11375004A570D /* AppDelegate.swift in Sources */,
-				D3798C591DD909A20079124B /* customButton.swift in Sources */,
+				D447DBA51DD9386C003E3B0D /* CustomButton.swift in Sources */,
 				47DB309F1DD1331F004A570D /* Deck.swift in Sources */,
 				47DB30951DD1213A004A570D /* BlackJackViewController.swift in Sources */,
 				47DB309C1DD121D1004A570D /* Card.swift in Sources */,
