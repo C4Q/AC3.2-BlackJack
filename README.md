@@ -204,4 +204,39 @@ SPLIT -> Hand splits into two hands
       -> 1st hand gets dealt automatically
       -> Actions then occur to both hands
  
-And so I went onto the Bet function, where I made an action out of one button that functioned as a chip in BlackJack, and then made duplicates of that so they all had the same function but sent their own values to add to your total amount that you wanted to Bet, capped at $500 in one go. Afterwards we had to implement the Deal function, which dealt the Player and Dealer their cards by loading their respective card images and updating their total card values.
+And so I went onto the Bet function, where I made an action out of one button that functioned as a chip in BlackJack, and then made duplicates of that so they all had the same function but sent their own values to add to your total amount that you wanted to Bet, capped at $500 in one go. 
+
+```Swift
+   @IBAction func Bet(_ sender: UIButton) {
+        
+        while playing {
+            sender.isEnabled = false
+        }
+        
+        let amountBet = sender.currentTitle
+        
+        let amountBetUnwrapped = Int(amountBet!)!
+        
+        let betTotal = playerBet + amountBetUnwrapped
+        
+        if betTotal > -1 && betTotal <= 500 {
+            playerBet += amountBetUnwrapped;
+        
+        let moneyTotal = playerMoney - amountBetUnwrapped
+        if moneyTotal > -1 {
+            playerMoney -= amountBetUnwrapped
+        }
+
+     
+        }
+        
+        playerBetLabel.text? = String(playerBet)
+        playerMoneyLabel.text? = String(playerMoney)
+        
+        
+        
+    }
+   
+```
+
+Afterwards we had to implement the Deal function, which dealt the Player and Dealer their cards by loading their respective card images and updating their total card values.
