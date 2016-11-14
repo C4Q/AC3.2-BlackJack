@@ -117,6 +117,8 @@ Now you try! Yayy!!~ ☆*:. o(≧▽≦)o .:*☆
 
 //--------------------------------------------------------------------------------------------------------------------
 
+##Martyav
+
 I handled the view, almost entirely in storyboard. I also read up on how to create custom button classes, because the default styling on buttons is very flat and blocky. Rounded buttons with borders are very common in web design and signal to users that this is an area of the screen that can be clicked. Since XCode's GUI lacks controls for borders, I had to write a custom button class to give the buttons the styling I wanted.
 
 Creating a custom class for buttons is not too difficult. First, hit command-N or click through the file submenus.
