@@ -23,7 +23,7 @@
                                 <frame key="frameInset" minX="20" minY="75" width="627" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">    Try to beat the dealer by getting as close to 21 points as you can, without going over! Each card is worth its face value, except for Kings, Jacks, Queens &amp; Aces. The royalty are worth 10 points each, while the Aces can be worth either 1 or 10 points, at the player's discretion. An Ace and a ten-point card dealt in the first round is an instant win. The game starts with the dealer being dealt two cards, one of which is hidden. You're dealt two cards and place your bet. Each round, you can choose to keep your cards (stand), quit (fold), get another card (hit), or double your bet. If you're dealt two of a kind the first round, you can also choose to split. When you split, you're granted two hands of cards to choose from when trying to beat the dealer. </mutableString>
+                                <string key="text">    Try to beat the dealer by getting as close to 21 points as you can, without going over! Each card is worth its face value, except for Kings, Jacks, Queens &amp; Aces. The royalty are worth 10 points each, while the Aces can be worth either 1 or 10 points, at the player's discretion. An Ace and a ten-point card dealt in the first round is an instant win. The game starts with the dealer being dealt two cards, one of which is hidden. You're dealt two cards and place your bet. Each round, you can choose to keep your cards (stand), quit (fold), get another card (hit), or double your bet. If you're dealt two of a kind the first round, you can also choose to split. When you split, you're granted two hands of cards to choose from when trying to beat the dealer. </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
@@ -37,7 +37,7 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="-4" height="-2"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-fG-nt0" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-fG-nt0" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                 <frame key="frameInset" minX="20" minY="340" width="30" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,7 +74,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oqd-Qd-cQT" userLabel="Top Row">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTO-2X-BUC" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTO-2X-BUC" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="3aj-d8-g6a"/>
@@ -88,7 +88,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZU-VL-FfX" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZU-VL-FfX" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="CKm-CO-aBu"/>
@@ -106,7 +106,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8sm-za-PFX" userLabel="Bottom Row">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-h2-bbn" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-h2-bbn" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="hWn-GP-BLb"/>
@@ -120,7 +120,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxr-yv-9ix" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxr-yv-9ix" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="bUx-4F-J1t"/>
@@ -156,7 +156,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-gV-cdF" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-gV-cdF" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="hAl-pH-sLz"/>
@@ -174,7 +174,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fce-1X-A4s" userLabel="Top row">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5f-xB-WRA" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5f-xB-WRA" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="AIN-K9-w6n"/>
@@ -188,7 +188,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="din-33-lLk" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="din-33-lLk" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Kqm-Zw-wv7"/>
@@ -202,7 +202,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-mV-qNR" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-mV-qNR" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MZZ-dg-sA0"/>
@@ -220,7 +220,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-cF-if1" userLabel="Bottom row">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufz-aa-6sX" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufz-aa-6sX" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="4Gh-XE-duT"/>
@@ -234,7 +234,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-lp-IHL" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-lp-IHL" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="NbA-dH-C2s"/>
@@ -248,7 +248,7 @@
                                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.33725490200000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feh-JW-vTv" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feh-JW-vTv" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="LwX-VY-bDB"/>
@@ -362,7 +362,7 @@
                                     <constraint firstAttribute="width" constant="75" id="Q8G-Dw-KJH"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-kr-NCh" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-kr-NCh" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="llg-ms-eTA"/>
@@ -456,7 +456,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-Kj-4zk" customClass="customButton" customModule="BlackJack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-Kj-4zk" customClass="CustomButton" customModule="BlackJack" customModuleProvider="target">
                                 <frame key="frameInset" minX="166" minY="191" width="30" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21157208089999999" green="0.75629079340000005" blue="0.26483327150000002" alpha="1" colorSpace="calibratedRGB"/>
