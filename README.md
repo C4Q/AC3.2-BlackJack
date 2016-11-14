@@ -178,3 +178,30 @@ And our buttons look like this:
 ![](https://cloud.githubusercontent.com/assets/19174201/20250779/6ab87202-a9e0-11e6-91e4-512e001e6ac9.png)
 
 *Note that the "alpha" in our color code refers to the alpha channel, which is basically how transparent the color is. An alpha of 1.0 is a completely solid color, while an alpha of 0 is completely transparent. Messing with the alpha channel can allow you to do some fancy effects. It also lets you quickly grey out and lighten colors to match their backgrounds, if you're feeling lazy.*
+
+## Evan
+Initial step was to layout the thought process of how the game was played and indicate specific steps that were required ie. updating labels and values.
+
+Player clicks a button to place their bet -> Label updates to show Players bet placed
+Bet is subtracted from Player's $$ NOTE: If playerMoney = 0, game over! Labels updated
+ 
+DEAL -> Cards get drawn for Player AND Dealer
+     -> One Dealer card is shown and one is hidden
+     -> The scores of both Dealer and Player are updated; they become the sum of the card values
+ 
+HIT  -> Player draws, updates Player score
+     -> I Player score over 21 then game is over, hidden card is revealed, dealer score is updated, label updated to show you lost, playing is set to false.
+ 
+STAND -> Only Dealer draws as much as they want to, Dealer total gets updated ; If              
+         Dealer score over 21 then game is over, label updated to show you won,playing set to false.
+
+DOUBLE -> playerBet is doubled IF they have sufficient funds
+       -> Reveals the hidden card IF BlackJack and updates Dealer score and GG
+       -> Player draws, updates Player score
+       -> STAND
+ 
+SPLIT -> Hand splits into two hands
+      -> 1st hand gets dealt automatically
+      -> Actions then occur to both hands
+ 
+And so I went onto the Bet function, where I made an action out of one button that functioned as a chip in BlackJack, and then made duplicates of that so they all had the same function but sent their own values to add to your total amount that you wanted to Bet, capped at $500 in one go. Afterwards we had to implement the Deal function, which dealt the Player and Dealer their cards by loading their respective card images and updating their total card values.
