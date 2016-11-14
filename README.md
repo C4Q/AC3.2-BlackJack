@@ -165,7 +165,7 @@ Here comes the slightly confusing part. We want to set a color, but if we try to
 
 ![](https://cloud.githubusercontent.com/assets/19174201/20250741/06b4c896-a9e0-11e6-9422-3e873e6767fc.png)
 
-We fix this by calling the method CGColor. XCode is now happy again.
+We fix this by calling on cgColor at the end of our color definition. XCode is now happy again.
 
 ![](https://cloud.githubusercontent.com/assets/19174201/20250628/b6c98fd4-a9de-11e6-9748-acf667d4cab6.png)
 
