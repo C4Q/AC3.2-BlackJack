@@ -11,10 +11,6 @@ import UIKit
 
 class BlackJackViewController: UIViewController {
   
-  @IBOutlet weak var dealButton: UIButton!
-  var deckID: String?
-  var drawEndPoint: String?
-  var player = 0
   var dealer = 0
   var card: String?
   var playing = false
