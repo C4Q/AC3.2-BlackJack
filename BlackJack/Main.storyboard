@@ -556,6 +556,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Leo-LZ-AgK"/>
+                    <connections>
+                        <outlet property="dealButton" destination="CXh-kr-NCh" id="D9e-kJ-L6D"/>
+                        <outlet property="playerBetLabel" destination="4WL-lv-ipV" id="VbL-yy-DuX"/>
+                        <outlet property="playerCard" destination="vwh-5W-rnY" id="x6J-Jt-vIN"/>
+                        <outlet property="playerMoneyLabel" destination="JQs-b7-5UJ" id="R3R-Qh-GJC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
