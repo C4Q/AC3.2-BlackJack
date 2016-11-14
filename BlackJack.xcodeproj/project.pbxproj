@@ -102,6 +102,7 @@
 		47DB309D1DD121D5004A570D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D3798C581DD909A20079124B /* customButton.swift */,
 				47DB309B1DD121D1004A570D /* Card.swift */,
 				47DB309E1DD1331F004A570D /* Deck.swift */,
 			);
