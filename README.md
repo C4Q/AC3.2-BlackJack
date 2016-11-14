@@ -177,4 +177,4 @@ And our buttons look like this:
 
 ![](https://cloud.githubusercontent.com/assets/19174201/20250779/6ab87202-a9e0-11e6-91e4-512e001e6ac9.png)
 
-*Note that the "alpha" in our color code refers to the alpha channel, which is basically how transparent the color is. An alpha of one is a completely solid color, while an alpha of 0 is completely transparent. Messing with the alpha channel can allow you to do some fancy effects. It also lets you quickly grey out and lighten colors to match their backgrounds, if you're feeling lazy.*
+*Note that the "alpha" in our color code refers to the alpha channel, which is basically how transparent the color is. An alpha of 1.0 is a completely solid color, while an alpha of 0 is completely transparent. Messing with the alpha channel can allow you to do some fancy effects. It also lets you quickly grey out and lighten colors to match their backgrounds, if you're feeling lazy.*
