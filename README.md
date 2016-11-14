@@ -239,4 +239,39 @@ And so I went onto the Bet function, where I made an action out of one button th
    
 ```
 
-Afterwards we had to implement the Deal function, which dealt the Player and Dealer their cards by loading their respective card images and updating their total card values.
+Afterwards we had to implement the Deal function, which dealt the Player and Dealer their cards by loading their respective card images by calling dealPlayer() and updating their total card values.
+```Swift
+func dealPlayer() {
+    APIRequestManager.manager.getData(endPoint: "\(drawEndPoint)") { (data: Data?) in
+        if  let validData = data,
+            let validCard = Card.cards(from: validData) {
+            let dealtCard = validCard.value
+            self.player += dealtCard
+            self.cardImageURL = validCard.image
+        }
+    }
+    
+    APIRequestManager.manager.downloadImage(urlString: cardImageURL) { (data: Data?) in
+        if  let validData = data,
+            let validImage = UIImage(data: validData) {
+            DispatchQueue.main.async {
+                self.playerCard?.image = validImage
+                
+                self.viewDidLoad()
+            }
+        }
+    }
+    
+  @IBAction func deal(_ sender: UIButton) {
+     
+     playing = true
+     dealPlayer() //deals player and dealer
+     playerScoreLabel.text = String(player)
+     dealerScoreLabel.text = String(dealer)
+     //Update UIImages for Player and Dealer NOTE: Dealer has 1 card hidden
+     
+     while playing {
+        sender.isEnabled = false
+     }
+     
+     ```
