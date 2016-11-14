@@ -153,7 +153,7 @@ Ok, but what about the corners?
 
 As https://robots.thoughtbot.com/building-ios-interfaces-custom-button points out, views (much like ogres) have layers. And these layers have properties that can be manipulated. Thoughtbot demonstrates this by rounding the corners for a button with some code inside viewDidLoad(). It's generally nicer to put this kind of styling in its own file, especially if you're styling a bunch of buttons at once.
 
-First, we round the corners of our button by setting the cleverly named self.layers.cornerRadius. If you know CSS, corner radius should feel pretty familiar. We set it to 5.0 -- the number refers to pixel width.  
+First, we round the corners of our button by setting the cleverly named self.layers.cornerRadius. If you know CSS, corner radius should feel pretty familiar. We set it to 5.0. Higher numbers mean rounder buttons. We just want it slightly round.  
 
 ![](https://cloud.githubusercontent.com/assets/19174201/20250630/b6cab184-a9de-11e6-90ad-f3d3c18ff2cf.png)
 
