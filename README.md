@@ -135,7 +135,7 @@ When creating your file, make sure to subclass it from UIButton. Give it a good,
 
 You'll now have something that looks like this:
 
-![](https://cloud.githubusercontent.com/assets/19174201/20250200/615acbee-a9d9-11e6-958f-be8952d9f571.png)
+![](https://cloud.githubusercontent.com/assets/19174201/20250988/faf9d426-a9e2-11e6-8b80-c4636f01efe2.png)
 
 This isn't that helpful. All it contains is a commented-out function that you're warned NOT to use. So what do we do now?
 
