@@ -13,7 +13,7 @@ class BlackJackViewController: UIViewController {
   
   var deckID: String?
   var drawEndPoint: String?
-  var player: Int?
+  var player = 0
   var dealer: Int?
   var card: String?
   
@@ -41,7 +41,8 @@ class BlackJackViewController: UIViewController {
     APIRequestManager.manager.getData(endPoint: "\(endPoint)") { (data: Data?) in
       if  let validData = data,
         let validCard = Card.cards(from: validData) {
-        self.card = validCard.image
+        let dealtCard = validCard.value
+        self.player += dealtCard
       }
     }
   }
